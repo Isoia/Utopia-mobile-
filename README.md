@@ -28,3 +28,6 @@
 ![기술설명(게시글1)](https://user-images.githubusercontent.com/101082700/208092051-efe4af95-f328-405f-a4bc-aa7bc0228cdd.png)
 
 작성된 게시물입니다.
+
+![기술설명(게시글2)](https://user-images.githubusercontent.com/101082700/208092137-ffdd3945-fe0c-4dd4-b740-d19610edd2f1.png)
+작성된 게시물 조리 과정 부분입니다.
