@@ -1,0 +1,1149 @@
+@charset "UTF-8";
+@import url("bootstrap.css");
+
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  position: relative;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.container {
+	width:100%;
+	padding: 0 10rem;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.recipe-section {
+	padding: 2rem 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Noto Sans KR', 'Dongle', "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+
+#mainNav {
+  width:100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #ffc800;
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625em;
+  text-shadow: -2px 0 #212529, 0 2px #212529, 2px 0 #212529, 0 -2px #212529;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc800;
+}
+ /*앱 display에서 보일 홈버튼*/
+ .navbar-app-home{
+ 	display:none;
+ }
+ /*화면을 줄였을때 미뉴바 없애고 토글버튼 생성 500px이상일때는 none*/
+ .nav-item-togle{
+ 	display:none;
+ }
+ 
+
+.masthead {
+  width:100%;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/origin/slide1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Noto Sans KR', 'Dongle', "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* 추가 시작 */
+#tag-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#recommend-list-container {
+	font-size: 20px;
+	color: #FFC800;
+}
+.tag-container-item {
+	margin: 10px;
+}
+#recommend-list {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.recommend-list-item {
+	margin : 0px 30px;
+}
+#search-container {
+	display: flex;
+	width: 600px;
+	height: 50px;
+	border: 5px solid #FFC800;
+	border-radius: 50px;
+}
+#search-input-container {
+	display: flex;
+	width: 100%;
+	padding: 8px 12px 8px 8px;
+	align-items: center;
+	justify-content: center;
+}
+#search-input {
+	width: auto;
+	height: 100%;
+	background-color: none;
+	border: none;
+	flex: 1;
+	margin: 0px 10px;
+}
+#search-input:focus {
+	outline: none;
+}
+#search-icon {
+	width: 24px;
+	height: 24px;
+}
+#search-entire {
+	padding: 10px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	background-color: rgb(229, 244, 235);
+}
+.over-hidden {
+	display: inline-block;
+	justify-content: center;
+	width: 100%;
+	height: 0;
+	left: 0;
+	top:0;
+	padding-bottom: 50%;
+	overflow: hidden;
+}
+form {
+	width: 100%;
+	height: 100%;
+}
+
+#advertise {
+	display:flex;
+	flex-direction: row;
+}
+
+#ad-background-container {
+	flex: 3;
+	height: 300px;
+	max-height: 300px;
+	text-align: center;
+	overflow: hidden;
+	user-select: none;
+	pointer-events: none; 
+}
+#ad-text-container {
+	display: flex;
+	background-color: black;
+	padding: 20px;
+	flex: 1.5;
+	height: 300px;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+#ad-text-container {
+	color: white;
+}
+
+.ad-text {
+	color: white;
+	margin-right: 40px;
+	text-shadow: -1px 0 #212529, 0 1px #212529, 1px 0 #212529, 0 -1px #212529;
+}
+#weather-t1h{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: right;
+}
+#weather-sky{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+
+#random-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+}
+
+#random {
+	width: 100%;
+	bottom: 0;
+}
+/* 추가 끝 */
+
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Noto Sans KR', 'Dongle', "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* 개조한 부분 */
+
+/* 이미지 관련 */
+.img-size-sm {
+	width: 100px;
+}
+.img-size-md {
+	width: 125px;
+}
+.img-size-lg {
+	width: 150px;
+}
+.img-size-xl {
+	width: 200px;
+}
+.img-size-xxl {
+	width: 300px;
+}
+
+/* 이미지 테두리 */
+.card-wrapper {
+	padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+}
+/*앱 화면과 border값을 죽이기 위해 */
+.write-update-card-wrapper{
+	padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+}
+.image-wrapper {
+	position: relative;
+    height: 0%;
+    overflow: hidden;
+    padding-bottom: 50%;
+}
+.image-wrapper img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+.card-wrapper .image-wrapper{
+    border-radius: 0.375rem;
+}
+
+/* 태그 */
+a.search-tag {
+	text-decoration: none;
+	color: white;
+	background: black;
+	padding: 5px 10px;
+	margin: 1px;
+	border-radius: 30px;
+}
+
+a.post-title:hover, a.search-tag:hover {
+	text-decoration: underline;
+}
+
+/* 게시글 링크용 간소화 버전 */
+.article-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.flex-item {
+	margin: 10px;
+}
+.title-flex {
+	flex-grow: 1;
+}
+.title-flex div {
+	display: inline;
+}
+.hidden-ic-image {
+	visibility: collapse;
+}
+.alt-icon {
+	width: 36px;
+	height: 36px;
+}
+.view-flex {
+	color: black;
+}
+
+/*페이지*/
+.page-btn li {
+	display: inline-block;
+	border-radius: 10px;
+	margin: 1px;
+	padding: 2px;
+	min-width: 32px;
+}
+
+.page-btn li.selected {
+	background-color: #ffc107;
+}
+
+.page-btn a {
+	color: black;
+}
+
+.article-tag-list {
+	margin: 0px;
+}
+
+.article-tag-list li{
+	display: inline-block;
+}
+
+.grid-3-2 {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+
+/* 모달 */
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10;
+
+  background-color: rgba(65, 65, 65, 0.774);
+}
+
+.login-modal {
+  width: 500px;
+  height: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.login-brand {
+  color: #FFC800;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.login-modal .login-item {
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	margin : 5px 0px;
+}
+
+.collapse-login {
+	visibility: collapse !important;
+}
+
+/* 게시글 등록 */
+.recipe-container {
+	display: flex;
+	flex-direction: column;
+	padding: 0 12rem;
+}
+
+.recipe-item {
+	width: 100%;
+	margin: 5px 0;
+}
+
+.recipe-item-title {
+	width: 100px;
+}
+.recipe-item-title-thumbnail{
+	display:none;
+}
+
+.recipe-item-input {
+	width: 300px;
+	height: 50px;
+}
+
+#recipe-section-info {
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+	align-items: center;
+}
+
+.recipe-item-thumbnail {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+}
+
+.recipe-sequence-item {
+	margin-top: 10px;
+}
+
+.recipe-sequence-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.recipe-sequence-content textarea {
+	flex: 4;
+	height: 200px;
+	resize: none;
+}
+
+#recipe-section-tip textarea {
+	width: 100%;
+	height: 600px;
+	resize: none;
+}
+
+.recipe-sequence-content .recipe-item-image {
+	width: 300px;
+	height: 200px;
+	border: 1px solid black;
+	object-fit: cover;
+}
+
+/* 게시글 본문 */
+.article-item {
+	margin : 20px 0px;
+	display: flex;
+}
+
+.article-subinfo-item {
+	display: inline-block;
+}
+
+#article-info {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#article-subinfo {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#article-thumbnail {
+	width: auto;	
+	margin: 20px;
+}
+
+.id-article-thumbnail-image {
+	width: 50%;
+}
+
+#article-ingredient {
+	flex-direction: column;
+}
+
+.article-item-ingredient ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.article-item-ingredient ul li {
+	font-size: 1.2em;
+	margin-right: 15px;
+}
+
+#article-sequence {
+	flex-direction: column;
+}
+
+.article-item-sequence {
+	width: 100%;
+}
+
+#article-comment {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#article-comment-list {
+	flex-direction: column;
+}
+
+.article-item-comment {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+#article-comment-list form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#article-comment-list form * {
+	margin: 5px 0px;
+}
+
+#article-comment-list textarea {
+	width: 100%;
+	resize: none;
+}
+
+.article-comment input {
+	right: 0;
+}
+
+/* 마이페이지 */
+#mypage-container {
+	display: flex;
+	flex-direction: row;
+	margin: 30px 10% 0 10%;
+}
+
+.mypage-menu {
+	flex: 1;
+	padding: 10px;
+}
+
+.mypage-menu a {
+	color: black;
+	font-size: 1.2rem;
+}
+
+.mypage-menu a:hover {
+	color: gray;
+	font-size: 1.2rem;
+	text-decoration: underline;
+}
+
+#mypage-content {
+	flex: 5;
+}
+
+/* 마이페이지 - 정보 수정 */
+.info-grid {
+	display: grid;
+	grid-template-columns: 200px 500px;
+	row-gap: 20px;
+}
+
+.info-grid input {
+	width: 350px;
+}
+
+/*버튼*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* 개조한 부분 끝 */
+
+/*이택용 추가 */
+#question-item{
+}
+#header {
+text-align: center;
+}
+#question-item-content, #question-item-title {
+  	padding: 5px;
+ 	 text-align: center;
+}
+#question-item-title{
+	background-color: #756e6f;
+	margin-top: 10px;
+	color : #eee6c4;
+}
+#question-item-content {
+	margin-right: 120px;
+  	margin-left: 120px;
+  	padding: 50px;
+  	display: none;
+}
+
+
+#question-item-content2, #question-item-title2 {
+  	padding: 5px;
+ 	 text-align: center;
+}
+#question-item-title2{
+	background-color: #003458;
+	margin-top: 10px;
+	color : #eee6c4;
+}
+
+#question-item-content2 {
+  margin-right: 120px;
+  margin-left: 120px;
+  padding: 50px;
+  display: none;
+}
+
+#flex-container1{ 
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 20px;
+	background-color: #ffffbf;
+}
+#flex-container2{ 
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 20px;
+	background-color: #ffffff;
+}
+#flex-container3{ 
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	margin-left: 30px;
+	margin-right: 20px;
+	background-color: #cce8f4;
+}
+.quary-section {
+   color: black;
+   padding: 100px 0;
+}
+#article-thumbnail{			/*칸을 맞추기 위해 margin-left 0으로 수정*/
+	margin-left:0px;
+}
+#article-thumbnail-image{	/*이유는 모르겠지만 앱화면시 이미지 띄워즈는 div값이 0이라 값 부여*/
+	width:50%;	
+}
+#article-ingredient{
+	padding:1rem;
+}
+.my-post-title{						/*앱 화면시 내가 작성한 게시글 margin-left값 부여*/
+	margin-left: 1rem;
+}
+.pc-screen-text{					/*pc화면시 pc화면 도움말 텍스트 보이게*/
+	display:block;
+}
+.app-screen-text{					/*앱 화면시 도움말 전용 텍스트 값 안보이게*/
+	display: none;
+}
+
+/* 웹 화면시 메뉴버튼 가리기 */
+.nav-item-toggle {
+	display: none;
+	
+	padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+/*모바일 화면(500px) */
+@media screen and (max-width:500px){
+	/*앱 화면에 맞게 footer 수정*/
+	.footer{
+		width:100vw;
+	}
+	
+	/*앱 화면시 이달의 베스트 아티클 border 삭제*/
+	.post-card-wrapper{
+		border:none;
+	}
+	
+	.text-lg-start{	/*앱 화면시 Copyright © Your Website 2022 안보이게 하기*/
+		display:none;
+	}
+	
+	.text-lg-end{	/*앱 화면시 Privacy Policy, Terms of Use 안보이게 하기*/
+		display:none;
+	}
+	
+	.my-lg-0{		/*앱 화면시 footer 아이콘 3개 박스 크기와 margin값 부여*/
+		width:300px;
+		text-align: center;
+		margin-left:5rem;
+	}
+	
+	/*메인 네비 Utopia*/
+	#mainNav {
+	 	background-color: #212529;
+	 	width:500px;
+	}
+	
+	/*앱 화면시 nav UTOPIA 안보이게 하고 숨긴 홈버튼 나오게 하기*/
+	#mainNav .navbar-brand{	/*UTOPIA 안보이게 하기*/
+		display:none;
+	}
+	
+	.navbar-menu{		/*Home, 메뉴 버튼*/
+ 		width: 100%;
+ 		display: flex;
+	    flex-wrap: nowrap;
+	    align-items: center;
+	    justify-content: space-between;
+ 	}
+ 	.navbar-app-home {   /*UTOPIA 대신 홈 버튼 띄우기*/
+ 		display: block;
+ 		color: #ffc800;
+ 	}
+ 	
+ 	/*앱 화면시 커뮤니티 ~ 로그인,회원가입 버튼 가리고 토글메뉴 표시*/
+ 	.nav-item-toggle{
+ 	display: inline-block;
+ 	color: #ffc800;
+ 	}
+ 	.navbar-expand-lg .navbar-nav {
+	    flex-direction: column;
+	}
+	.navbar-expand-lg .navbar-collapse {
+	    display: block;
+	    flex-basis: auto;
+	}
+ 	.collapse:not(.show) {
+        display: none;
+	}
+	
+	/*이달의 베스트 밥상, 커뮤니티 글짜 크기 수정*/
+	.page-section h2.section-heading, .page-section .section-heading.h2 {	/*이달의 베스트 밥상 글자 크기 수정*/
+	  font-size: 1.7rem;
+	  margin-top: 0;
+	  margin-bottom: 1rem;
+	}
+	/*사람들이 가장 많이 본 걸 추천 , 다른사람들이 올린 밥상 반응 글자 크기 수정*/
+	.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+	  font-size: 0.9rem;
+	  font-weight: 400;
+	  font-style: italic;
+	  font-family: 'Noto Sans KR', 'Dongle', "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	  margin-bottom: 4rem;
+	} 
+	/*앱 화면시 태그 margin값 삭제*/
+	.tag-flex{
+		font-size:0.3rem;	
+	}
+	/*앱 화면시 5개 게시물 나오는 리스트 img 삭제*/
+	.post-list-img-div{
+		display:none;
+	}
+	/*comu-container(5개짜리) 너무 붙어져있어 margin값 설정*/
+	.article-flex{
+		margin:10px;
+	}
+	
+	/*모바일 메인 배경이미지*/
+	header.masthead{
+	  width:100vw;
+	}
+	.container{
+		padding:0 1.5rem;
+	}
+	
+	/*메인 이미지 밑에 hr 크기 수정*/
+	.mainHr{
+		width:90vw;
+	}
+	/*검색칸 section width값 수정*/
+	.utopia-main-page-section{
+		width:500px;
+	}
+		
+ 	/*앱 화면시 메인 페이지 검색창 크기 수정*/
+ 	#tag-container {
+	width: 100vw;
+	}
+ 	#search-container {
+	display: flex;
+	width: 300px;
+	height: 50px;
+	border: 5px solid #FFC800;
+	border-radius: 50px;
+	}
+	
+	/*best article section width값 수정*/
+	.main-best-article-section{
+		width:480px;
+	}
+	
+	/*앱 화면시 best3 게시물 표시창 수정(utopia_main, community_main 적용)*/	
+	.best-container{
+		padding:0;
+		width:480px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#best-article > div > div.row.text-center{	/*베스트3 게시물 크기 조정*/	
+		margin:1px;
+	}
+	.col-md-4{
+		padding:3px;
+	}
+	.article-user-name{	/*베스트3 게시물 사용자 이름 크기 수정*/
+		font-size:0.8rem;
+	}
+	.article-food-name{	/*베스트3 게시물 음식 이름 크기 수정*/
+		font-size:1.0rem;
+	}
+	a.search-tag {		/*태그 크기 수정*/
+		font-size:0.6rem;
+		background: black;
+		padding: 3px 7px;
+		margin: 0.7px;
+		border-radius: 20px;	
+	}
+	
+	/*메인 api 수정*/
+	.map-api-main-section{	/*section width값 수정*/
+		width:500px;
+	}
+	
+	/*커뮤니티 section(5개 나오는거) width값 수정*/
+	.main-comu-section{
+		width:480px;
+	}
+
+	/*앱 화면시 반응좋은 게시물(5개 나오는거) 표시창 수정(utopia_main, community_main 적용)*/	
+	.comu-container{
+		padding:0;
+		width:460px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/*여기까지 utopia_main 앱화면*/
+	
+	/*식단뉴스 앱화면 시작*/
+	/*오늘의 뉴스 수정*/
+	.news-article-item{		/*앱 화면시 div width 크기 수정과 오늘의 뉴스 텍스트 가운데로 수정*/
+		width:460px;
+		display:flex;
+		justify-content: center;
+		padding-bottom:60px;
+	}
+	.id-article-thumbnail{		/*앱 화면시 뉴스 이미지 width 수정*/
+		width:460px;
+		margin-left: 0;				/*마진으로 글과 이미지 위치 조정*/
+	}
+	.id-article-thumbnail-image{	/*오늘의 뉴스 img담고있는 div 크기 증가*/
+		width: 100%;
+	}
+	.news-card-wrapper{		/*오늘의 뉴스 코멘트 div 크기 앱 화면에 맞추기*/
+		width:460px;
+	}
+	/*오늘의 뉴스 끝*/	
+	
+	/*커뮤니티 메인 시작*/
+	.comunity-main-search{	/*앱 화면시 커뮤니티 메인 검색창 감싸고있는 div 크기 수정*/
+		width:500px;
+		padding-bottom: 0px;
+	}
+	/*커뮤니티 메인 끝*/
+	
+	/*커뮤니티 서치 시작*/
+	.comu-search-section1{	/*앱 화면시 section 크기 500으로 수정*/
+		width:500px;
+	}
+	.comu-search-section2{	/*앱 화면시 section 크기 500으로 수정*/
+		width:500px;
+	}
+	.comu-search-maindiv{	/*3개의 버튼과 게시물 div 칸을 맞추기 위해 기존에있던 패딩값 수정*/
+		padding: 0px;
+	}
+	.comu-search-threebtn{	/*3개 버튼 앱화면시 가운데 정렬*/
+		text-align: center;
+	}
+	#post-list-container{	/*최신,댓글,조회 div와 칸을 맞추기 위해 margin-left 수치 삭제*/
+		margin-left:0px;
+	}
+	/*커뮤니티 서치 끝*/
+	
+	/*포스트 시작*/
+	.post-section{		/*앱 화면에 맞춰 post section width값 수정*/
+		width:500px;
+	}
+	.post-container{	/*앱 화면에 맞춰 포스트 전체 div의 padding값 수정*/
+		padding:15px;
+	}
+	#article-info{		/*제목,조회수,댓글수 div 공간 width값 수정*/
+		width:450px;
+	}
+	.title-jaeryo-hr{	/*제목과 재료 사이에 있던 hr 제목에 맞춰 margin값 삭제와 제목div와 크기 같게 조정*/
+		margin:0px;
+		width:450px;
+	}
+	#article-subinfo{	/*작성자, 작성날짜 width값 조정*/
+		width:450px;
+	}
+	#article-thumbnail{			/*article-thumbnail-image 덮고있는 div width 값 수정*/
+		width:460px;	
+	}
+	#article-thumbnail-image{	/*이유는 모르겠지만 앱화면시 이미지 띄워즈는 div값이 0이라 값 부여*/
+		width:100%;
+	}
+	#article-ingredient{		/*재료칸 다른 div에 맞춰 width 460px로 수정*/
+		width:460px;
+		padding-right:0px;
+	}
+	#article-sequence{			/*조리과정칸 다른 div에 맞춰 width 460px로 수정*/
+		width:460px;
+	}
+	.recipe-sequence-content .recipe-item-image {	/*조리과정에서 이미지 width값 수정*/
+		width: 225px;
+	}
+	#article-comment{	/*댓글 div width 값 수정*/
+		width:460px;
+	}
+	.comment-hr{		/*댓글쪽 hr width 값 수정*/
+		width:460px;
+		margin:0px;
+	}
+	#article-comment-list{	/*댓글창 width 값 수정*/
+		width:460px;
+	}
+	/*포스트 끝*/
+	
+	/*write_post, update_post 같이 시작*/
+	.recipe-section{	/*앱 화면시 게시글 작성 "게시글 생성" section값 수정*/
+		width:480px;
+	}
+	.section-heading{	/*앱 화면시 "게시글 생성" 글씨 사이즈 수정*/
+		font-size:1.3rem;
+	}
+	.recipe-container-hr{	/*앱 화면시 "게시글 생성" 밑에 있는 hr 크기 수정*/
+		width:460px;
+	}
+	.recipe-container{		/*앱 화면시 recipe-container(제목,태그,썸네일)칸 padding값 수정*/
+		padding: 0 1rem;
+	}
+	#recipe-section-info {			/*썸네일,제목,태그 들어가는 div*/
+		flex-direction: column;
+		align-items: baseline;
+	}
+	.post-write-form{				/*썸네일,제목,태그 들어가는 폼*/
+		width:480px;
+	}
+	#recipe-thumbnail{				/*앱 화면시 썸네일 선택칸과 제목,태그 칸을 맞추기 위해 똑같이 마진값 부여*/
+		margin-left : 10px;
+	}
+	.recipe-item-title-thumbnail{	/*앱 화면시 pc화면과 다르게 썸네일 선택하는 칸 옆에 썸네일 텍스트 주입*/
+		width:50px;
+		display:inline-block;
+	}
+	.recipe-item-thumbnail{			/*썸네일 사진 넣는 div*/
+		margin-right:0px;
+		width:300px;
+		height:50px;
+	}
+	.write-update-card-wrapper{		/*앱 화면시 회색 border값 삭제*/
+		border:none;
+	}
+	.recipe-item-input {			/*앱 화면시 썸네일 파일 선택 버튼과 제목 입력칸을 맞추기 위해 margin값 부여*/
+		margin-left: 1rem;
+	}
+	/*write_post, update_post 같이 끝*/
+	
+	/*my_page_post 시작*/
+	#mypage-container {					/*내 게시물 div 수정*/
+		display:block;
+		width:500px;
+		margin: 30px 1rem 0 1rem;
+	}
+	.mypage-view-flex{					/*앱 화면시 조회수 안보이게*/
+		display:none;
+	}
+	.mypage-menu{						/*앱 화면시 내 정보 메뉴칸 div width값, margin값 수정*/
+		width:420px;
+		margin-left: 0px;
+		margin-bottom: 1rem;
+	}
+	#mypage-content {					/*앱 화면시 내가 작성한 게시글 div width값 수정*/
+		width:480px;
+	}
+	.my-post-title{						/*앱 화면시 내가 작성한 게시글 margin-left값 부여*/
+		margin-left: 0.5rem;
+	}
+	.my-post-hr{						/*앱 화면시 hr margin-left값 수정*/
+		margin-left: 0.9rem;
+	}
+	.my-post-article-flex{				/*앱 화면시 게시글 margin-left값 수정*/
+		margin-left: 0;
+	}
+	#my-post-search-tag{
+		display: none;
+	}
+	.my-post-no-writable{
+		margin-left: 10px;
+	}
+	/*my_page_post 끝*/
+	
+	/*my_page_info 시작*/
+	.my-info-card-wrapper{				/*앱 화면시 info수정 padding값 변경*/
+		padding: 1rem;
+	}
+	.info-grid {						/*앱 화면시 정보수정 칸 배율 조정*/
+		grid-template-columns: 130px 500px;
+	}
+	.info-grid input {					/*앱 화면시 정보수정 입력칸 width 크기값 조정*/
+    	width: 320px;
+	}
+	/*my_page_info 끝*/
+	
+	/*customer_center 시작*/
+	.customer-center-article{			/*앱 화면시 "무엇을 도와드릴까요" div width값 수정*/
+		width: 480px;
+	}
+	.customer-center-element{			/*앱 화면시 도움말 1,2,3 width값 수정 */
+		width:480px;
+	}
+	.quary-section{						/*앱 화면시 도움말 1,2,3 width값 수정 */
+		width:480px;
+	}
+	.pc-screen-text{					/*pc화면시 pc화면 도움말 텍스트 보이게*/
+		display:none;
+	}
+	.app-screen-text{					/*앱 화면시 도움말 전용 텍스트 값 안보이게*/
+		display: block;
+	}	
+	/*customer_center 끝*/
+	
+	/*csutomer_center query 1,2,3 시작*/
+	.customer-center-query-section{
+		width:480px;
+	}
+	#question-item{						/*앱 화면시 question div width값 수정*/
+		width:500px;
+	}
+	#question-item-content {			/*앱 화면시 답변글 margin, padding값 수정*/
+		margin-right: 0px;
+	  	margin-left: 0px;
+	  	padding: 30px;
+	}
+	#question-item-content2 {			/*앱 화면시 답변글 margin, padding값 수정*/
+		margin-right: 0px;
+	  	margin-left: 0px;
+	  	padding: 30px;
+	}
+	/*customer_center quert 1,2,3 끝*/
+	
+	/*로그인 모달 */
+	.modal-container {
+	  display: block;
+	}
+	/*게시물 검색결과가 없을때*/
+	.my-3{
+		text-align: center;
+	}
+}
