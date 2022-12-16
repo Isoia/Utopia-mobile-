@@ -24,3 +24,7 @@
 ![기술설명(게시글작성2)](https://user-images.githubusercontent.com/101082700/208091611-df57151a-6b80-4cbc-87f9-bf1fc7774c4d.png)
 
 게시물 작성법 이어서 입니다. 본격적인 사진과 조리법을 적어두는 란입니다. 재료와 마찬가지로 스탭을 늘려갈 수 있습니다.
+
+![기술설명(게시글1)](https://user-images.githubusercontent.com/101082700/208092051-efe4af95-f328-405f-a4bc-aa7bc0228cdd.png)
+
+작성된 게시물입니다.
